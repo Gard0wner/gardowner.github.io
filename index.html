@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Вадим Рейлян</title>
+    <style>
+        /*стилі */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            line-height: 1.5;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block; 
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .resume-container {
+            display: flex;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Ліва Колонка */
+        aside {
+            background-color: #3b5998;
+            color: white;
+            width: 35%;
+            padding: 30px 20px;
+        }
+        .profile-photo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%; /* Робить фото круглим */
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        aside h2 {
+            font-size: 18px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        aside p, aside li {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        .contact-info div {
+            margin-bottom: 15px;
+        }
+
+        .contact-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        /* ПРАВА КОЛОНКА (Основна) */
+        main {
+            width: 65%;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 36px;
+            color: #222;
+        }
+
+        h2.section-title {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        /* Стилі для блоків досвіду/освіти */
+        .job-item, .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .job-date {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .company {
+            font-style: italic;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .job-desc {
+            font-size: 14px;
+        }
+
+        /* Блок для HTML entities */
+        .entities-task {
+            background-color: #222;
+            color: #0f0;
+            padding: 20px;
+            margin-top: 40px;
+            font-family: monospace;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Головна</a></li>
+            <li><a href="#experience">Досвід</a></li>
+            <li><a href="#education">Освіта</a></li>
+            <li><a href="#entities">HTML Entities</a></li>
+        </ul>
+    </nav>
+
+    <div class="resume-container">
+        <aside id="about">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJzIkIGm0CSws5qx51eIoi8Jj5Xc0oageaRg0vg-e1U6u9s6f9c=s288-c-no" alt="Вадим Рейлян" class="profile-photo">
+
+            <h2>Особисті дані</h2>
+            <div class="contact-info">
+                <div>
+                    <span class="contact-label">Ім'я</span>
+                    Вадим Рейлян
+                </div>
+                <div>
+                    <span class="contact-label">Адреса</span>
+                    вул. Набережна, буд. 30, 32<br>76000 Івано-Франківськ
+                </div>
+                <div>
+                    <span class="contact-label">Номер телефону</span>
+                    +38 066 154-96-22
+                </div>
+                <div>
+                    <span class="contact-label">Email</span>
+                    Rejlyan986@gmail.com
+                </div>
+                <div>
+                    <span class="contact-label">Дата народження</span>
+                    11-08-2007
+                </div>
+            </div>
+
+            <h2>Інтереси</h2>
+            <ul>
+                <li>Вивчення графічних програм</li>
+                <li>GameDev</li>
+                <li>PythonDev</li>
+                <li>Монтаж</li>
+            </ul>
+
+            <h2>Мови</h2>
+            <ul>
+                <li><strong>Англійська:</strong> Середній рівень</li>
+                <li><strong>Японська:</strong> N4 рівень</li>
+                <li><strong>Українська:</strong> Рідна мова</li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Вадим Рейлян</h1>
+
+            <section id="experience">
+                <h2 class="section-title">Досвід роботи</h2>
+
+            </section>
+
+            <section id="education">
+                <h2 class="section-title">Освіта і кваліфікації</h2>
+                
+                <div class="edu-item">
+                    <div class="job-header">
+                        <span class="job-title">Бакалавр</span>
+                        <span class="job-date">вер 2024 - 2027</span>
+                    </div>
+                    <div class="company">Фаховий коледж електронних приладів "ІФНТУНГ", Івано-Франківськ</div>
+                    <p class="job-desc">Спеціальність F6 "Інформаційні системи і технології"</p>
+                </div>
+            </section>
+            
+            <section>
+                <h2 class="section-title">Навички</h2>
+                <p>C++, Python, </p>
+            </section>
+            
+            <section>
+                <h2 class="section-title">Мої роботи</h2>
+            </section>
+
+            <section id="entities">
+                <h2 class="section-title">HTML Entities</h2>
+                <p>Нижче виведена базова структура HTML-документа за допомогою спецсимволів:</p>
+                
+                <div class="entities-task">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Title&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Content --&gt;<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
